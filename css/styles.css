@@ -135,18 +135,19 @@ body {
     padding-bottom: 32px;
 }
 
+.auth-nav .icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
 .nav.link.current,
 .nav.link:focus,
 .nav.link:hover,
 .auth.link:focus,
 .auth.link:hover {
     color: var(--accent-color);
-    fill: currentColor;
 }
 
-.auth-nav .icon {
-    margin-right: 10px;
-}
 .auth.link {
     display: flex;
     align-items: center;
