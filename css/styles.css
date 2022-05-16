@@ -15,6 +15,8 @@ html {
     --background-additionalcolor: #F5F4FA;
     --address-color:rgba(255, 255, 255, 0.6);
     --icon-color: #AFB1B8;
+    --background-social-color:rgba(255, 255, 255, 0.1);
+    --portfolio-text-color: rgba(117, 117, 117, 1);
 }
 
 
@@ -160,6 +162,8 @@ body {
     
     margin-left: auto;
     margin-right: auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
 
 
     background-image: linear-gradient(
@@ -176,8 +180,7 @@ body {
 }
 .hero .container {
     width: 696px;
-    padding-top: 200px;
-    padding-bottom: 200px;
+
 }
 .hero-title {
     color: var(--white-color);
@@ -400,6 +403,7 @@ body {
     text-transform: uppercase;
     color: var(--white-color);
 
+    margin-top: 0;
     margin-bottom: 20px;
 }
 .contacts-block {
@@ -413,7 +417,7 @@ body {
     height: 44px;
     border-radius: 50%;
 
-    background-color: var(--icon-color);
+    background-color: var(--background-social-color);
     fill: var(--white-color);
 }
 .networks .item:not(:last-child) {
@@ -467,8 +471,13 @@ body {
     margin-bottom: 30px;
 
 }
-.example:hover,
-.example:focus {
+
+.example-link {
+    display: block;
+    text-decoration: none;
+}
+.example-link:hover,
+.example-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
     0px 4px 4px rgba(184, 75, 75, 0.06), 
     1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -504,6 +513,7 @@ body {
 .example-class {
     font-size: 16px;
     line-height: 1.88;
+    color: var(--portfolio-text-color);
     
     margin-top: 0;
     margin-bottom: 0;
